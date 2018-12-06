@@ -3,7 +3,7 @@ class RunsController < ProtectedController
 
   # GET /runs
   def index
-    @runs = Run.all
+    @runs = current_user.runs
 
     render json: @runs
   end
@@ -15,7 +15,7 @@ class RunsController < ProtectedController
 
   # POST /runs
   def create
-    @run = Run.new(run_params)
+    @run = current_user.runs.build(run_params)
 
     if @run.save
       render json: @run, status: :created, location: @run
@@ -41,7 +41,7 @@ class RunsController < ProtectedController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_run
-      @run = Run.find(params[:id])
+      @run = current_user.runs.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.

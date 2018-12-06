@@ -7,7 +7,8 @@ curl "http://localhost:4741/runs" \
     "run": {
       "distance": "'"${DISTANCE}"'",
       "time": "'"${TIME}"'",
-      "date": "'"${DATE}"'"
+      "date": "'"${DATE}"'",
+      "user_id": "'"${U_ID}"'"
     }
   }'
 

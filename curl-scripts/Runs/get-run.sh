@@ -1,4 +1,4 @@
-curl "http://localhost:4741/examples" \
+curl "http://localhost:4741/runs/${ID}" \
   --include \
   --request GET \
   --header "Authorization: Token token=${TOKEN}"
