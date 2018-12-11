@@ -24,9 +24,9 @@ ActiveRecord::Schema.define(version: 2018_12_06_210009) do
   end
 
   create_table "runs", force: :cascade do |t|
-    t.string "distance"
-    t.integer "time"
-    t.datetime "date"
+    t.float "distance"
+    t.float "time"
+    t.date "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
