@@ -10,7 +10,7 @@
 * Heroku
 
 ### Repos and Live Links
-* [Front End Repo](https://github.com/KwesiAtherley/run-tracker-backend-client)
+* [Front End Repo](https://github.com/KwesiAtherley/run-tracker-frontend-client)
 * [Heroku Deplyoed Back End](https://ancient-crag-63339.herokuapp.com/)
 * [Deployed Front End Client](https://kwesiatherley.github.io/run-tracker-frontend-client/)
 ### Build Process
